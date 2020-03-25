@@ -5,7 +5,7 @@
 // into 3 main class that served only ONE purpose.
 
 // Door: lock or unlock.
-// Finger print scanner: verify the identity of the user.
+// FingerPrintScanner: verify the identity of the user.
 // Screen: display messages from the system.
 
 class Door {
@@ -49,7 +49,7 @@ var scanner = new FingerPrintScanner();
 var screen = new Screen();
 const readline = require('readline').createInterface({
     input: process.stdin,
-    output: process.stdout
+    output: process.stdout,
 });
 
 readline.question("Scan your finger print to show me who you are.\nI'm: ", user => {
